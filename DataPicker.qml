@@ -3,7 +3,6 @@ import QtQuick 2.5
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.0
 
-import "../Utility.js" as Utility
 
 Item {
     z: 100
@@ -242,7 +241,7 @@ Item {
         }
         VP.AppButton {
             id: buttonCancel
-            text: "Annulla"
+            text: qsTr("Annulla")
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             onClicked: {
@@ -252,7 +251,7 @@ Item {
 
         VP.AppButton {
             id: buttonOk
-            text: "Conferma"
+            text: qsTr("Conferma")
             Layout.alignment: Qt.AlignRight
             anchors.right: parent.right
             anchors.bottom: parent.bottom
